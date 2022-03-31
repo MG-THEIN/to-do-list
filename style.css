@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, rgb(147, 245, 66),  rgb(68, 239, 242));
+    color: black;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.5rem;
+}
+
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+form input, form button{
+    font-size: 2rem;
+    padding: 0.5rem;
+    border: none;
+    background: white;
+}
+
+form button{
+    color: rgba(3, 177, 252, 0.70);
+    background: white;
+    cursor: pointer;
+}
+
+form button:hover{
+    background: rgba(3, 177, 252, 0.95);
+    color: white;
+}
+
+.x{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list{
+    min-width: 25%;
+    max-width: 50%;
+    list-style: none;
+}
+
+.to-do-div{
+    margin: 0.5rem;
+    background: white;
+    color:black;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.75rem;
+    transition: all 0.5s ease;
+}
+
+.li{
+    flex: 1;
+    flex-direction: column;
+    margin-right: 1.5rem;
+    word-wrap:break-word;
+    word-break: break-all;
+}
+
+.delete-btn, .done-btn{
+    width: 1.75rem;
+    font-size: 1.25rem;
+    color: white;
+    max-height: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn{
+    background: rgba(168, 6, 168, 0.75);
+}
+
+.done-btn{
+    background: rgba(11, 148, 11, 0.75);
+}
+
+.delete-btn:hover {
+    background: rgba(168, 6, 168, 0.95);
+}
+
+.done-btn:hover {
+    background: rgba(11, 148, 11, 0.95);
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform:translateY(8rem) rotateZ(45deg);
+    opacity: 0;
+}
